@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+class Vehicle
+{
+    public:
+    string name,col,type;
+    Vehicle(string n,string c,string t)
+    {
+        name = n;
+        col = c;
+        type = t;
+    }
+    void display()
+    {
+        cout<<name<<" is a "<<type<<" vehicle in "<<col<<" color";
+    }
+
+};
+
+int main()
+{
+    Vehicle v1("Car","Blue","Four wheeler");
+    v1.display();
+}
